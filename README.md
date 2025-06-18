@@ -1,4 +1,4 @@
-# KDataInsights Portfolio Website
+up# KDataInsights Portfolio Website
 
 Welcome to the official portfolio website of **KDataInsights** — a data-driven consultancy offering impactful solutions through data science, machine learning, and insightful dashboards.
 
@@ -24,9 +24,9 @@ Welcome to the official portfolio website of **KDataInsights** — a data-driven
 
 ## 📬 Contact
 
-📧 info@kdatainsights.com  
+📧 ricochetkevoh@gmail.com 
 📞 +254758-241-234
-[🔗 [LinkedIn](https://linkedin.com/company/kdatainsights)](https://www.linkedin.com/in/kevin-datainsights-7bb23625b?trk=contact-info)
+(https://www.linkedin.com/in/kevin-datainsights-7bb23625b?trk=contact-info)
 
 ---
 
