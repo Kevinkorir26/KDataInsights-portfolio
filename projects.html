@@ -1,43 +1,51 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Projects | KDataInsights</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          keyframes: {
+            'fade-slide-up': {
+              '0%': { opacity: '0', transform: 'translateY(20px)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' }
+            }
+          },
+          animation: {
+            'fade-slide-up': 'fade-slide-up 0.8s ease-out both',
+          }
+        }
+      }
+    }
+  </script>
 </head>
-  <body class="bg-blue-900 text-white"> 
-  
-<header class="flex flex-col items-center p-6 space-y-4">
-  <div class="text-2xl font-bold">KDataInsights</div>
-  <nav class="flex space-x-4">
-    <a href="index.html" class="hover:underline">Home</a>
-    <a href="about.html" class="hover:underline">About</a>
-    <a href="projects.html" class="hover:underline">Projects</a>
-    <a href="contact.html" class="underline">Contact</a>
-  </nav>
-</header>
-  <main class="p-8 space-y-6">
-    <h2 class="text-3xl font-semibold mb-4">Projects</h2>
-    <div>
+
+<body class="bg-blue-900 text-white">
+  <header class="flex flex-col items-center p-6 space-y-4 animate-fade-slide-up">
+    <div class="text-2xl font-bold">KDataInsights</div>
+    <nav class="flex space-x-4">
+      <a href="index.html" class="hover:underline transition duration-300">Home</a>
+      <a href="about.html" class="hover:underline transition duration-300">About</a>
+      <a href="projects.html" class="hover:underline transition duration-300">Projects</a>
+      <a href="contact.html" class="underline transition duration-300">Contact</a>
+    </nav>
+  </header>
+
+  <main class="p-8 space-y-12">
+    <h2 class="text-3xl font-semibold mb-4 text-center animate-fade-slide-up">Projects</h2>
+
+    <!-- Project 1 -->
+    <div class="space-y-4 animate-fade-slide-up" style="animation-delay: 0.1s;">
       <h3 class="text-xl font-bold">1. IPL Win Probability Predictor</h3>
-      <p>Data Science Project at Sankyana Consultancy Services
-        This project involved building a machine learning model to predict the win probability of an IPL team in real time based on match conditions such as overs, wickets, and score. I used historical ball-by-ball data and match-level statistics, performed data wrangling, feature engineering, and implemented a classification model using logistic regression and random forests. The solution helped demonstrate how analytics can enhance fan engagement and strategic decisions in sports.</p>
-        <img src="ipl_win_probability_plot.png" alt="ipl_win_probability_plot"class="mat-2 rounded-lg shadow-lg w-1/6">
-      </div>
-    <div>
-      <h3 class="text-xl font-bold">2. Fraud Detection System</h3>
-      <p>In this project, I developed a fraud detection system for financial transactions. Using a large, imbalanced dataset, I performed EDA, handled class imbalance with SMOTE, and built a Random Forest model to classify transactions as fraudulent or not. I focused on model interpretability and deployed evaluation metrics like precision-recall and ROC-AUC to ensure high sensitivity to fraud cases.</p>
-      <img src="fraud_detection_distribution_small.png" alt="Fraud Detection Visualizations" class="mat-2 rounded-lg shadow-lg mx-auto">
+      <p>
+        Data Science Project at Sankyana Consultancy Services – This project involved building a machine learning model to predict the win probability of an IPL team in real time based on match conditions such as overs, wickets, and score...
+      </p>
+      <img src="ipl_win_probability_plot.png" alt="ipl win probability plot" class="rounded-lg shadow-lg w-1/6 transition transform hover:scale-105 duration-300" />
     </div>
-    <div>
-      <h3 class="text-xl font-bold">3. Customer Churn Analysis</h3>
-      <p>I created a predictive model to identify customers likely to leave a subscription-based service. This involved analyzing customer behavior data, identifying churn signals, and building a logistic regression model to predict churn risk. I also created a simple dashboard that helped business teams proactively retain customers.</p>
-      <img src="churn_probability_distribution_small.png" alt="Churn Probability Distributions" class="mat-2 rounded-lg shadow-lg mx-auto">
-    </div>
-    <div>
-      <h3 class="text-xl font-bold">4. Sales Forecasting Dashboard</h3>
-      <p>In this project, I built an interactive dashboard that forecasts monthly sales using historical data. I applied time series forecasting techniques (ARIMA, Exponential Smoothing) and visualized the results using Python (Plotly and Dash). The dashboard allowed business stakeholders to interact with different regions and product lines for better planning.</p>
-    </div>
-  </main>
-</body>
-</html>
+
+    <!-- Project 2 -->
+    <d
