@@ -1,4 +1,4 @@
-up# KDataInsights Portfolio Website
+up # KDataInsights Portfolio Website
 
 Welcome to the official portfolio website of **KDataInsights** — a data-driven consultancy offering impactful solutions through data science, machine learning, and insightful dashboards.
 
