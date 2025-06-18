@@ -1,54 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>KDataInsights | Home</title>
+  <title>Home | KDataInsights</title>
   <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- AOS Animation CSS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <!-- Tailwind config for dark mode -->
   <script>
     tailwind.config = {
-      theme: {
-        extend: {
-          keyframes: {
-            'fade-in-up': {
-              '0%': { opacity: '0', transform: 'translateY(20px)' },
-              '100%': { opacity: '1', transform: 'translateY(0)' },
-            },
-          },
-          animation: {
-            'fade-in-up': 'fade-in-up 0.8s ease-out both',
-          },
-        }
-      }
+      darkMode: 'class'
     }
   </script>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
 </head>
-<body class="bg-blue-900 text-white">
 
-  <main class="flex flex-col items-center justify-center p-8 space-y-6 text-center">
+<body class="bg-blue-900 text-white dark:bg-white dark:text-gray-900 transition-colors duration-500">
 
-    <!-- Welcome Message -->
-    <h1 class="text-4xl font-bold animate-fade-in-up">Welcome to</h1>
-
-    <!-- Logo -->
-    <img src="KDataInsights Logo.png" alt="KDataInsights Logo" class="h-20 w-auto animate-fade-in-up" style="animation-delay: 0.2s" />
-
-    <!-- Introductory Paragraph -->
-    <p class="text-lg max-w-2xl animate-fade-in-up" style="animation-delay: 0.4s">
-      At KDataInsights, we help individuals and businesses unlock the power of their data.
-      With expert data analysis, machine learning, and insightful dashboards,
-      we turn raw data into real-world impact.
-    </p>
-
-    <!-- Navigation Links -->
-    <nav class="space-y-2 text-xl animate-fade-in-up" style="animation-delay: 0.6s">
-      <div><a href="index.html" class="underline hover:text-blue-300 transition duration-300">Home</a></div>
-      <div><a href="about.html" class="hover:underline hover:text-blue-300 transition duration-300">About</a></div>
-      <div><a href="projects.html" class="hover:underline hover:text-blue-300 transition duration-300">Projects</a></div>
-      <div><a href="contact.html" class="hover:underline hover:text-blue-300 transition duration-300">Contact</a></div>
+  <!-- Header with Logo and Nav -->
+  <header class="flex justify-between items-center p-6" data-aos="fade-down">
+    <img src="KDataInsights Logo.png" alt="KDataInsights Logo" class="h-20 w-auto">
+    <nav class="space-x-4 text-lg">
+      <a href="#home" class="underline">Home</a>
+      <a href="#about" class="hover:underline">About</a>
+      <a href="projects.html" class="hover:underline">Projects</a>
+      <a href="contact.html" class="hover:underline">Contact</a>
     </nav>
+  </header>
 
-  </main>
-  
+  <!-- Home Section -->
+  <section id="home" class="text-center px-6 py-16 space-y-6" data-aos="fade-up">
+    <h1 class="text-4xl font-bold">Welcome to KDataInsights</h1>
+    <p class="text-lg max-w-2xl mx-auto">
+      At KDataInsights, we help individuals and businesses unlock the power of their data.
+      With expert data analysis, machine learning, and insightful dashboards, we turn raw data into real-world impact.
+    </p>
+    <nav class="space-y-2 text-xl animate-slide-in-up delay-300">
+      <div><a href="index.html" class="underline hover:text-blue-300">Home</a></div>
+      <div><a href="about.html" class="hover:underline hover:text-blue-300">About</a></div>
+      <div><a href="projects.html" class="hover:underline hover:text-blue-300">Projects</a></div>
+      <div><a href="contact.html" class="hover:underline hover:text-blue-300">Contact</a></div>
+    </nav>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="px-6 py-20 bg-blue-800 dark:bg-gray-100 dark:text-gray-900 transition-colors duration-500" data-aos="fade-up">
+    <h2 class="text-3xl font-semibold mb-6 text-center">About Us</h2>
+    <div class="max-w-3xl mx-auto text-lg leading-relaxed">
+      <p>
+        <strong>KDataInsights</strong> is a growing data science consultancy firm committed to helping businesses and individuals uncover insights from their data.
+        We focus on building data-driven solutions through statistical analysis, machine learning models, and custom data visualizations.
+        Whether it’s customer behavior, financial trends, or sports analytics, we uncover hidden patterns in your data—translating raw data into decisions.
+      </p>
+      <br>
+      <p>
+        We deliver actionable insights with clarity and precision. Our mission is to bridge the gap between data and decision-making by combining technical excellence with business understanding.
+      </p>
+    </div>
+  </section>
+
+  <!-- Extra space to allow scrolling -->
+  <div class="h-[30vh]"></div>
+
+  <!-- AOS Animation Script -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      once: false
+    });
+  </script>
 </body>
 </html>
