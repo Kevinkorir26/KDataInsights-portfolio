@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -42,16 +43,17 @@
 
 <body class="bg-navy text-softWhite dark:bg-white dark:text-gray-900 transition-colors duration-500">
   <header class="flex flex-col items-center p-6 space-y-4" data-aos="fade-down">
-    <div class="flex justify-between items-center w-full max-w-4xl">
-      <div class="text-2xl font-bold">KDataInsights</div>
-      <button class="toggle-dark" onclick="toggleTheme()">Toggle Mode</button>
+    <div class="flex flex-col items-center space-y-2">
+      <img src="KDataInsights Logo.png" alt="KDataInsights Logo" class="h-16 w-auto">
+      <div class="text-xl font-bold">KDataInsights</div>
     </div>
-    <nav class="flex space-x-4">
-      <a href="#home" class="hover:underline">Home</a>
-      <a href="#about" class="hover:underline">About</a>
-      <a href="#projects" class="hover:underline">Projects</a>
-      <a href="#contact" class="hover:underline">Contact</a>
+    <nav class="flex space-x-6">
+      <a href="index.html" class="hover:underline">Home</a>
+      <a href="about.html" class="hover:underline">About</a>
+      <a href="projects.html" class="hover:underline">Projects</a>
+      <a href="contact.html" class="hover:underline">Contact</a>
     </nav>
+    <button class="toggle-dark mt-4" onclick="toggleTheme()">Toggle Mode</button>
   </header>
 
   <!-- Home Section -->
