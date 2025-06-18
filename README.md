@@ -1,10 +1,10 @@
-up # KDataInsights Portfolio Website
+up #KDataInsights Portfolio Website
 
 Welcome to the official portfolio website of **KDataInsights** — a data-driven consultancy offering impactful solutions through data science, machine learning, and insightful dashboards.
 
 ## 🌐 Live Site
 
-[Click here to visit the website](https://yourusername.github.io/kdatainsights-portfolio)
+[Click here to visit the [website](https://kevinkorir26.github.io/KDataInsights-portfolio/)
 
 ## 📂 Pages
 
