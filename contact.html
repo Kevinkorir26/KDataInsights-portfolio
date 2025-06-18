@@ -1,29 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>KDataInsights</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact | KDataInsights</title>
   <script src="https://cdn.tailwindcss.com"></script>
 
   <!-- AOS Animation CSS -->
-  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
-
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            softWhite: '#f0f0f0'
-          }
-        }
-      }
-    }
-  </script>
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
 </head>
+<body class="bg-blue-900 text-white">
 
-<body class="bg-blue-500 text-softWhite">
+  <!-- Header -->
   <header class="flex flex-col items-center p-6 space-y-4" data-aos="fade-down">
     <div class="flex flex-col items-center space-y-2">
       <img src="KDataInsights Logo.png" alt="KDataInsights Logo" class="h-16 w-auto">
@@ -33,26 +21,63 @@
       <a href="index.html" class="hover:underline">Home</a>
       <a href="about.html" class="hover:underline">About</a>
       <a href="projects.html" class="hover:underline">Projects</a>
-      <a href="contact.html" class="hover:underline">Contact</a>
+      <a href="contact.html" class="underline">Contact</a>
     </nav>
   </header>
 
-  <!-- Home Section -->
-  <section id="home" class="p-8 space-y-6" data-aos="fade-up">
-    <h1 class="text-4xl font-bold mb-4">Welcome to KDataInsights</h1>
-    <p class="text-lg max-w-3xl">At KDataInsights, we help individuals and businesses unlock the power of their data. With expert data analysis, machine learning, and insightful dashboards, we turn raw data into real-world impact.</p>
-  </section>
+  <!-- Main Contact Section -->
+  <main class="p-8 space-y-8 max-w-3xl mx-auto" data-aos="fade-up">
 
-  <!-- About Section -->
-  <section id="about" class="p-8 space-y-6" data-aos="fade-up">
-    <h2 class="text-3xl font-semibold mb-4">About Us</h2>
-    <p class="text-lg max-w-3xl">KDataInsights is a growing data science consultancy firm committed to helping businesses and individuals uncover insights from their data. We focus on building data-driven solutions through statistical analysis, machine learning models, and custom data visualizations. Whether it’s customer behavior, financial trends, or sports analytics, we uncover hidden patterns in your data translating raw data into decisions. We deliver actionable insights with clarity and precision. Our mission is to bridge the gap between data and decision-making by combining technical excellence with business understanding.</p>
-  </section>
+    <!-- Founder's Remark -->
+    <section class="text-center space-y-4">
+      <blockquote class="italic text-xl border-l-4 border-blue-300 pl-4">
+        "Your data has a story. We help you tell it—with purpose, precision, and insight."
+      </blockquote>
+      <p class="text-sm font-semibold text-blue-300">– Founder, KDataInsights</p>
 
-  <!-- Projects Section -->
-  <section id="projects" class="p-8 space-y-6" data-aos="fade-up">
-    <h2 class="text-3xl font-semibold mb-4">Projects</h2>
+      <!-- Placeholder for Founder's Photo -->
+      <div class="flex justify-center mt-4">
+        <div class="w-40 h-40 rounded-full overflow-hidden shadow-lg border-2 border-blue-300">
+          <img src="founder-photo.jpg" alt="Founder Photo" class="object-cover w-full h-full">
+        </div>
+      </div>
+    </section>
 
-    <div>
-      <h3 class="text-xl font-bold">1. IPL Win Probability Predictor</h3>
-      <p>This project involved building a machine learning model to predict the win probability of an IPL team in real time based on match conditions such as overs, wickets, and score. I used historical ball-by-ball data and match-level statistics, performed data wrangling, feature engineering, and implemented a classific
+    <!-- Contact Info -->
+    <section>
+      <h2 class="text-3xl font-semibold mb-4">Contact Us</h2>
+      <p class="text-lg mb-6">
+        <strong>We'd love to hear from you!</strong><br>
+        Whether you have a question, a project idea, or just want to connect — feel free to reach out using the links below.
+      </p>
+
+      <p>
+        <a href="mailto:ricochetkevoh@gmail.com" class="underline hover:text-blue-300">
+          Email
+        </a>
+      </p>
+
+      <p>
+        <a href="tel:+2547-5824-1234" class="underline hover:text-blue-300">
+          Phone
+        </a>
+      </p>
+
+      <p>
+        <a href="https://linkedin.com/in/kevin-datainsights-7bb23625b" class="underline hover:text-blue-300" target="_blank">
+          LinkedIn
+        </a>
+      </p>
+    </section>
+  </main>
+
+  <!-- AOS Animation JS -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      once: true
+    });
+  </script>
+</body>
+</html>
