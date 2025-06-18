@@ -1,15 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>KDataInsights</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | KDataInsights</title>
   <script src="https://cdn.tailwindcss.com"></script>
-
-  <!-- AOS Animation CSS -->
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
-
   <script>
     tailwind.config = {
       theme: {
@@ -23,8 +19,7 @@
     }
   </script>
 </head>
-
-<body class="bg-navy text-softWhite transition-colors duration-500">
+<body class="bg-navy text-softWhite">
   <header class="flex flex-col items-center p-6 space-y-4" data-aos="fade-down">
     <div class="flex flex-col items-center space-y-2">
       <img src="KDataInsights Logo.png" alt="KDataInsights Logo" class="h-16 w-auto">
@@ -34,52 +29,11 @@
       <a href="index.html" class="hover:underline">Home</a>
       <a href="about.html" class="hover:underline">About</a>
       <a href="projects.html" class="hover:underline">Projects</a>
-      <a href="contact.html" class="hover:underline">Contact</a>
+      <a href="contact.html" class="underline">Contact</a>
     </nav>
   </header>
 
-  <!-- Home Section -->
-  <section id="home" class="p-8 space-y-6" data-aos="fade-up">
-    <h1 class="text-4xl font-bold mb-4">Welcome to KDataInsights</h1>
-    <p class="text-lg max-w-3xl">At KDataInsights, we help individuals and businesses unlock the power of their data. With expert data analysis, machine learning, and insightful dashboards, we turn raw data into real-world impact.</p>
-  </section>
-
-  <!-- About Section -->
-  <section id="about" class="p-8 space-y-6" data-aos="fade-up">
-    <h2 class="text-3xl font-semibold mb-4">About Us</h2>
-    <p class="text-lg max-w-3xl">KDataInsights is a growing data science consultancy firm committed to helping businesses and individuals uncover insights from their data. We focus on building data-driven solutions through statistical analysis, machine learning models, and custom data visualizations. Whether it’s customer behavior, financial trends, or sports analytics, we uncover hidden patterns in your data translating raw data into decisions. We deliver actionable insights with clarity and precision. Our mission is to bridge the gap between data and decision-making by combining technical excellence with business understanding.</p>
-  </section>
-
-  <!-- Projects Section -->
-  <section id="projects" class="p-8 space-y-6" data-aos="fade-up">
-    <h2 class="text-3xl font-semibold mb-4">Projects</h2>
-
-    <div>
-      <h3 class="text-xl font-bold">1. IPL Win Probability Predictor</h3>
-      <p>This project involved building a machine learning model to predict the win probability of an IPL team in real time based on match conditions such as overs, wickets, and score. I used historical ball-by-ball data and match-level statistics, performed data wrangling, feature engineering, and implemented a classification model using logistic regression and random forests. The solution helped demonstrate how analytics can enhance fan engagement and strategic decisions in sports.</p>
-      <img src="ipl_win_probability_plot.png" alt="ipl_win_probability_plot" class="mat-2 rounded-lg shadow-lg w-1/6">
-    </div>
-
-    <div>
-      <h3 class="text-xl font-bold">2. Fraud Detection System</h3>
-      <p>In this project, I developed a fraud detection system for financial transactions. Using a large, imbalanced dataset, I performed EDA, handled class imbalance with SMOTE, and built a Random Forest model to classify transactions as fraudulent or not. I focused on model interpretability and deployed evaluation metrics like precision-recall and ROC-AUC to ensure high sensitivity to fraud cases.</p>
-      <img src="fraud_detection_distribution_small.png" alt="Fraud Detection Visualizations" class="mat-2 rounded-lg shadow-lg mx-auto">
-    </div>
-
-    <div>
-      <h3 class="text-xl font-bold">3. Customer Churn Analysis</h3>
-      <p>I created a predictive model to identify customers likely to leave a subscription-based service. This involved analyzing customer behavior data, identifying churn signals, and building a logistic regression model to predict churn risk. I also created a simple dashboard that helped business teams proactively retain customers.</p>
-      <img src="churn_probability_distribution_small.png" alt="Churn Probability Distributions" class="mat-2 rounded-lg shadow-lg mx-auto">
-    </div>
-
-    <div>
-      <h3 class="text-xl font-bold">4. Sales Forecasting Dashboard</h3>
-      <p>In this project, I built an interactive dashboard that forecasts monthly sales using historical data. I applied time series forecasting techniques (ARIMA, Exponential Smoothing) and visualized the results using Python (Plotly and Dash). The dashboard allowed business stakeholders to interact with different regions and product lines for better planning.</p>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="p-8 space-y-6" data-aos="fade-up">
+  <main class="p-8 space-y-6" data-aos="fade-up">
     <h2 class="text-3xl font-semibold mb-4">Contact Us</h2>
     <p class="text-lg mb-6">
       <strong>We'd love to hear from you!</strong><br>
@@ -101,21 +55,19 @@
       </a>
     </p>
 
-    <!-- Founder Remark -->
-    <div class="mt-10 p-6 bg-blue-800 rounded-lg shadow-md flex flex-col items-center space-y-4 max-w-xl mx-auto">
-      <img src="founder-photo.jpg" alt="Founder Photo" class="h-24 w-24 rounded-full object-cover border-2 border-white">
-      <blockquote class="italic text-center">“Your data has a story. We help you tell it—with purpose, precision, and insight.”<br><span class="font-semibold">– Founder, KDataInsights</span></blockquote>
+    <!-- Founder Remark Section -->
+    <div class="mt-12 p-6 bg-blue-800 rounded-lg shadow-lg flex flex-col items-center space-y-4">
+      <img src="founder.jpg" alt="Founder" class="w-24 h-24 rounded-full object-cover border-4 border-blue-400">
+      <blockquote class="italic text-center max-w-xl">
+        "Your data has a story. We help you tell it—with purpose, precision, and insight."
+        <footer class="mt-2 text-sm text-blue-300">– Founder, KDataInsights</footer>
+      </blockquote>
     </div>
-  </section>
+  </main>
 
-  <!-- AOS Animation JS -->
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
   <script>
-    AOS.init({
-      duration: 800,
-      once: true
-    });
+    AOS.init({ duration: 800, once: true });
   </script>
 </body>
-
 </html>
